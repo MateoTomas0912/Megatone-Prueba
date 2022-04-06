@@ -1,0 +1,148 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    width: fit-content;
+}
+
+h4{
+    cursor: pointer;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navBar .buscador{
+    display: flex;
+}
+
+.navBar .buscador .busqueda{
+    line-height: 30px;
+    border-radius: 2px;
+    font-size: 20px;
+    width: 260px;
+}
+
+.navBar .buscador .btn{
+    background-color: #848484;
+    color: #fff;
+    margin-left: 5px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 4px;
+    line-height: 40px;
+}
+
+.navBar .buscador .btn:hover{
+    background-color: #696969;
+    cursor: pointer;
+}
+
+.navBar .contacto .contactoContainer{
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.navBar .contacto .contactoContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.navBar .contacto .contactoContainer .datosContacto p{
+    margin: 3px;
+}
+
+.navBar .contacto .contactoContainer .telefonoLogo{
+    font-size: 54px;
+    padding: 10px;
+    color: #E6462C;
+}
+
+.navBar .redes{
+    font-size: 36px;
+}
+
+.contendorEnlaces{
+    background-color: #F4F4F4;
+    font-size: 16px;
+}
+
+.contendorEnlaces .posicion{
+    width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.contendorEnlaces a{
+    line-height: 1.8;   
+    color: rgb(112, 112, 112);
+}
+
+a li:hover{
+    text-decoration: underline;
+}
+
+.ventasCorporativas{
+    padding-left: 40px;
+    width: 240px;
+}
+
+.ekomi{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.ekomi img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.ekomi i{
+    font-size: 24px;
+    color: #F5D34F;
+}
+
+
+@media (max-width: 767px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBar .buscador{
+        padding: 20px 0;
+    }
+
+    .navBar .contacto{
+        padding: 20px 0;
+    }
+
+    .navBar .redes{
+        padding: 20px 0;
+    }
+
+    .contendorEnlaces .posicion{
+        width: 90%;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
